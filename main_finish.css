@@ -273,7 +273,7 @@ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   height: 50px;
 }
 .product_desc {
-  font-size: 1.2em;
+  font-size: var(--h2-font-size);
   height: 92px
 }
 .price {
