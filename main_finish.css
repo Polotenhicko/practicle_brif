@@ -451,6 +451,8 @@ input::-webkit-search-results-decoration {
 }
 .form input:focus::-webkit-input-placeholder,
 .form textarea:focus::-webkit-input-placeholder {
-
   color: transparent;
+}
+* {
+  max-width: 100%;
 }
