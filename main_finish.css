@@ -204,12 +204,11 @@ h3 {
   border-radius: 6px 6px 6px 6px;
   text-align: center;
   color: #333333;
-  font-size: 1.1em;
+  font-size: var(--h2-font-size);
   transition: .6s ease;
   transition-property: box-shadow, padding;
   background-color: white;
   border: 1px solid rgba(0,0,0,.2);
-  max-height: 43px;
 }
 .cat:hover {
 /*background-color: rgb(128,128,128,.2);*/
