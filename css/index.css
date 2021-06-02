@@ -297,6 +297,9 @@ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   font-family: Lato,Arial,sans-serif;
   border-radius: 10px;
   transition: background .2s ease;
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
 }
 .product_buy:hover {
   background-color: rgba(0, 214, 128, 0.9);
@@ -335,6 +338,7 @@ a:visited {
 }
 h2.about_page_name {
   margin-top: 0;
+
 }
 .btn_up {
   display: none;
@@ -453,4 +457,31 @@ input::-webkit-search-results-decoration {
 }
 * {
   max-width: 100%;
+}
+.order {
+  display: grid;
+  grid-template-areas: "img h2 h2"
+                        "img char amount"
+                        ". char .";
+}
+.product_img {
+  grid-area: img;
+}
+.order_char {
+  grid-area: char;
+  margin: 0;
+  font-size: 1.2em;
+  word-wrap: break-word;
+}
+.amount {
+  grid-area: amount;
+}
+.order_name {
+  font-size: 2em;
+  border-bottom: 1px solid black;
+  margin: 0;
+  padding-bottom: 30px;
+}
+.order_name_cont {
+  grid-area: h2;
 }
