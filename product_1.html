@@ -44,7 +44,7 @@
   <nav>
     <div class="nav">
     <a href="index.html">
-    <div class="nav_box nav_box_ready">
+    <div class="nav_box">
      Продукция
     </div></a>
     <a href="about.html"><div class="nav_box">
@@ -65,27 +65,46 @@
     <div class="order_name_cont">
       <h2 class="about_page_name order_name">Кровать раскладная "Стандарт-БС"</h2>
     </div>
-    <p class="order_char">
-      Производитель: Ярославские Раскладушки<br />
-      Модель: Стандарт-БС<br />
-      Наличие: Есть в наличии<br />
-      Размеры: 1950*650*260<br />
-      Размеры в сложенном виде: 800*650*125<br />
-      Вес в упаковке: 5,2 кг.<br />
-      Матрас: Отсутствует<br />
-      Максимальная (распределенная) нагрузка: 110 кг.<br />
-      Длина спального места: 195 см.<br />
-      Дополнительная усиливающая перемычка на средней опоре: Отсутствует<br />
-      Каркас: Стальная труба 18*1,2<br />
-      Колесная (средняя) опора: Отсутствует<br />
-      Основа спального места: Ткань без мягкого элемента, скреплена с каркасом пружинами растяжения<br />
-      Подголовник: Изменяемая высота подъема, 5 положений<br />
-      Полимерно-порошковая окраска: Есть<br />
-      Хомут для хранения раскладушки: Отсутствует<br />
-      Ширина спального места: 65 см.<br />
-      </p>
+    <ul class="order_char">
+      <li>Производитель: Ярославские Раскладушки</li>
+      <li>Модель: Стандарт-БС</li>
+      <li>Наличие: Есть в наличии</li>
+      <li>Размеры: 1950*650*260</li>
+      <li>Размеры в сложенном виде: 800*650*125</li>
+      <li>Вес в упаковке: 5,2 кг.</li>
+      <li>Матрас: Отсутствует</li>
+      <li>Максимальная (распределенная) нагрузка: 110 кг.</li>
+      <li>Длина спального места: 195 см.</li>
+      <li>Дополнительная усиливающая перемычка на средней опоре: Отсутствует</li>
+      <li>Каркас: Стальная труба 18*1,2</li>
+      <li>Колесная (средняя) опора: Отсутствует</li>
+      <li>Основа спального места: Ткань без мягкого элемента, скреплена с каркасом пружинами растяжения</li>
+      <li>Подголовник: Изменяемая высота подъема, 5 положений</li>
+      <li>Полимерно-порошковая окраска: Есть</li>
+      <li>Хомут для хранения раскладушки: Отсутствует</li>
+      <li>Ширина спального места: 65 см.</li>
+    </ul>
     <div class="amount">
-
+      <div class="cost cost_text">
+        <span class="cost_price">1222</span>.00 руб.
+      </div>
+      <div class="cost_number">
+        5 штук <span class="cost_5 cost_text"></span> <br />
+        10 штук <span class="cost_10 cost_text"></span> <br />
+        50 штук <span class="cost_50 cost_text"></span> <br />
+      </div>
+      <div class="quantity">
+        Количество
+        <div class="calc_amount">
+          <button class="minus button_quant">
+            <i class="fa fa-minus"></i>
+          </button>
+          <input type="text" class="number" value="1" maxlength="2"/>
+          <button class="plus button_quant">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
     </div>
   </div>
   <!--
@@ -108,6 +127,6 @@
   </div>
   </footer>
   <script src="script/button.js" type="text/javascript"></script>
-  <script src="script/inDeveloping.js" type="text/javascript"></script>
+  <script src="script/price.js" type="text/javascript"></script>
 </body>
 </html>

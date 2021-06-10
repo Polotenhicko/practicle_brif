@@ -169,6 +169,9 @@ nav {
   transition-property: border;
   transition-duration: .1s;
   transition-timing-function: ease-in-out;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
 }
 .nav_box:hover:not(.nav_box_ready) {
   /*background-color: rgb(20,91,163,.5);*/
@@ -284,7 +287,7 @@ box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
   font-family: Lato,Arial,sans-serif;
 }
 .product_buy {
-  color: white;
+  color: white !important;
   width: 100%;
   padding: 6px 35px;
   margin-top: 15px;
@@ -460,28 +463,102 @@ input::-webkit-search-results-decoration {
 }
 .order {
   display: grid;
-  grid-template-areas: "img h2 h2"
+  grid-template-areas: "h2 h2 h2"
                         "img char amount"
                         ". char .";
+  grid-template-columns: auto auto 400px;
+  grid-row-gap: 20px;
 }
 .product_img {
   grid-area: img;
+  padding: 10px 60px;
 }
 .order_char {
   grid-area: char;
   margin: 0;
   font-size: 1.2em;
   word-wrap: break-word;
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.5;
 }
 .amount {
   grid-area: amount;
+  width: 235px;
+  border: 1px solid rgba(0, 0, 0, .6);
+  margin: auto;
+  border-radius: 3px;
 }
 .order_name {
   font-size: 2em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, .6);
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .order_name_cont {
   grid-area: h2;
+}
+.cost {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+.cost_text {
+  color: rgba(43,181,43,1);
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.cost_number .cost_text {
+  font-size: 1.05em;
+  margin-left: 10px;
+  color: rgba(79,207,60,1);
+}
+.cost_number {
+  padding: 10px;
+  font-size: 1.2em;
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  line-height: 1.5;
+}
+.quantity {
+  padding: 10px;
+  font-size:1.2em;
+}
+.button_quant {
+  width: 30px;
+  height: 50px;
+  font-size: 1.1em;
+  font-weight: bold;
+  vertical-align: middle;
+  margin: 0;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, .3);
+  border-right: 1px solid rgba(0, 0, 0, .3);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.fa-minus::before {
+  content: "\f068";
+}
+.fa-plus::before {
+  content: "\f067";
+}
+.calc_amount {
+  display: inline-flex;
+  text-align: center;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, .3);
+  border-bottom: 1px solid rgba(0, 0, 0, .3);
+  width: 100px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+.number {
+  border: none;
+  background-color: inherit;
+  font-size: inherit;
+  padding: 0;
+  outline: none;
+  max-width: 30px;
+  text-align: center;
 }
