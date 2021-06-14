@@ -341,7 +341,9 @@ a:visited {
 }
 h2.about_page_name {
   margin-top: 0;
-
+}
+.about_page p {
+  font-size: 1.15em;
 }
 .btn_up {
   display: none;
