@@ -602,3 +602,6 @@ input::-webkit-search-results-decoration {
 a.normal_a {
   color: #4365e0
 }
+.footer_p {
+  align-self: center;
+}
